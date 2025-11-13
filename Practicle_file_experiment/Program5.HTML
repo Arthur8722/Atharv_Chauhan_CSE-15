@@ -4,67 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Registration Form</title>
-    <style>
-        body {
-            font-family: "Georgia", serif;
-            background-color: #ffffff;
-        }
-        section {
-            border: 2px solid #000;
-            width: 90%;
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
-            box-shadow: 3px 3px 0 #888;
-        }
-        h1 {
-            font-size: 1.8em;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        table {
-            margin-top: 20px;
-            font-size: 16px;
-        }
-        label {
-            font-weight: bold;
-            font-family: "Times New Roman", serif;
-        }
-        input, select, textarea {
-            font-family: "Consolas", monospace;
-            font-size: 15px;
-            padding: 5px;
-            border: 1px solid #555;
-            border-radius: 3px;
-        }
-        input[type="button"], input[type="submit"] {
-            font-family: "Georgia", serif;
-            font-weight: bold;
-            padding: 5px 12px;
-            border: 1px solid #000;
-            background-color: #e6e6e6;
-            cursor: pointer;
-        }
-        input[type="button"]:hover, input[type="submit"]:hover {
-            background-color: #dcdcdc;
-        }
-        textarea {
-            width: 95%;
-            height: 60px;
-        }
-        a {
-            text-decoration: none;
-            font-weight: bold;
-            color: #000;
-        }
-        hr {
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        span {
-            font-weight: normal;
-        }
-    </style>
 </head>
 <body>
     <center>
@@ -89,7 +28,7 @@
                         <td><label>Gender<span>:</span></label></td>
                         <td colspan="3">
                             <input type="radio" name="gender" value="Male"> Male
-                            <input type="radio" name="gender" value="Female" style="margin-left:20px;"> Female
+                            <input type="radio" name="gender" value="Female"> Female
                         </td>
                     </tr>
                     <tr>
@@ -131,11 +70,10 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td colspan="3" style="text-align:center;">
+                        <td colspan="3" align="center">
                             <input type="submit" value="Submit">
                             <hr>
                             If already registered then click here
-                    
                         </td>
                     </tr>
                 </table>
