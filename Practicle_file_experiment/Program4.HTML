@@ -4,127 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Room Booking Form</title>
-    <style>
-        body {
-            font-family: "Georgia", serif;
-            background-color: #ffffff; /* clean white background */
-        }
-        .booking-box {
-            width: 400px;
-            margin: 60px auto;
-            padding: 30px;
-            border: 2px solid #000;
-            background-color: #fff;
-            box-shadow: 3px 3px 0 #999;
-        }
-        h1 {
-            text-align: center;
-            font-size: 1.8em;
-            margin-bottom: 25px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        label {
-            font-weight: bold;
-            display: inline-block;
-            width: 150px;
-            text-align: left;
-            font-size: 15px;
-        }
-        input, select, textarea {
-            font-family: "Consolas", monospace;
-            font-size: 14px;
-            padding: 4px;
-            width: 180px;
-            border: 1px solid #555;
-            border-radius: 3px;
-        }
-        textarea {
-            width: 96%;
-            height: 60px;
-        }
-        .form-row {
-            margin-bottom: 12px;
-        }
-        .btn-container {
-            text-align: center;
-            margin-top: 12px;
-        }
-        button {
-            font-family: "Georgia", serif;
-            font-weight: bold;
-            padding: 6px 14px;
-            margin: 5px;
-            border: 1px solid #000;
-            border-radius: 3px;
-            background-color: #e6e6e6;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-        button:hover {
-            background-color: #dcdcdc;
-        }
-    </style>
 </head>
 <body>
-    <div class="booking-box">
-        <h1>Hotel Room Booking Form</h1>
-        <form>
-            <div class="form-row">
-                <label>Full Name:</label>
-                <input type="text" name="fullname">
-            </div>
-            <div class="form-row">
-                <label>Email:</label>
-                <input type="email" name="email">
-            </div>
-            <div class="form-row">
-                <label>Phone:</label>
-                <input type="tel" name="phone">
-            </div>
-            <div class="form-row">
-                <label>Check-in Date:</label>
-                <input type="date" name="checkin">
-            </div>
-            <div class="form-row">
-                <label>Check-out Date:</label>
-                <input type="date" name="checkout">
-            </div>
-            <div class="form-row">
-                <label>Arrival Time:</label>
-                <input type="text" name="arrivaltime" placeholder="e.g. 2:30 PM">
-            </div>
-            <div class="form-row">
-                <label>Room Type:</label>
-                <select name="roomtype">
-                    <option>Single Room</option>
-                    <option>Double Room</option>
-                    <option>Suite</option>
-                    <option>Luxury Suite</option>
-                </select>
-            </div>
-            <div class="form-row">
-                <label>Number of Guests:</label>
-                <input type="number" name="guests" min="1">
-            </div>
-            <div class="form-row">
-                <label>Payment Method:</label>
-                <select name="payment">
-                    <option>Cash</option>
-                    <option>Credit/Debit Card</option>
-                    <option>UPI</option>
-                    <option>Online Transfer</option>
-                </select>
-            </div>
-            <div class="form-row">
-                <label>Special Requests:</label><br>
-                <textarea name="requests"></textarea>
-            </div>
-            <div class="btn-container">
-                <button type="submit">Book Now</button>
-                <button type="reset">Reset Form</button>
-            </div>
-        </form>
-    </div>
+
+<center>
+    <h1>Hotel Room Booking Form</h1>
+
+    <form>
+
+        <table cellpadding="8">
+
+            <tr>
+                <td><label>Full Name:</label></td>
+                <td><input type="text" name="fullname"></td>
+            </tr>
+
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type="email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td><label>Phone:</label></td>
+                <td><input type="tel" name="phone"></td>
+            </tr>
+
+            <tr>
+                <td><label>Check-in Date:</label></td>
+                <td><input type="date" name="checkin"></td>
+            </tr>
+
+            <tr>
+                <td><label>Check-out Date:</label></td>
+                <td><input type="date" name="checkout"></td>
+            </tr>
+
+            <tr>
+                <td><label>Arrival Time:</label></td>
+                <td><input type="text" name="arrivaltime" placeholder="e.g. 2:30 PM"></td>
+            </tr>
+
+            <tr>
+                <td><label>Room Type:</label></td>
+                <td>
+                    <select name="roomtype">
+                        <option>Single Room</option>
+                        <option>Double Room</option>
+                        <option>Suite</option>
+                        <option>Luxury Suite</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Number of Guests:</label></td>
+                <td><input type="number" name="guests" min="1"></td>
+            </tr>
+
+            <tr>
+                <td><label>Payment Method:</label></td>
+                <td>
+                    <select name="payment">
+                        <option>Cash</option>
+                        <option>Credit/Debit Card</option>
+                        <option>UPI</option>
+                        <option>Online Transfer</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td valign="top"><label>Special Requests:</label></td>
+                <td><textarea name="requests" rows="4" cols="30"></textarea></td>
+            </tr>
+
+        </table>
+
+        <br>
+        <button type="submit">Book Now</button>
+        <button type="reset">Reset Form</button>
+
+    </form>
+</center>
+
 </body>
 </html>
